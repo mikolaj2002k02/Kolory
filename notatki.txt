@@ -1,0 +1,67 @@
+System 16 - wyłuskanie bitów.
+1. cout << hex << zmienna;
+cout << dec << zmienna;
+2. Zadanie - dane są 4 bajty
+int kolor = 0x00aabbcc;
+0x - liczba w systemie 16
+3. System 16:
+każda cyfra 0-f
+jeden bajt to dwie cyfry np. 0xff
+0x00
+typ int ma 4 bajty
+8 cyfr 16tkowych
+4. Dane: kolor 32 bitowy w postaci 0xaarrggbb
+a- przezroczystość = 0
+rr - ilość farby czerwonej
+gg - zielonej
+bb- niebieskiej
+w jednym int dlatego są 4 bajty
+5. wyłuskanie
+dany jest kolor 0x12345678
+int kolor = 0x12345678;
+wyłuskać z niego kolor zielony
+0x00005600
+0x56 - sam kolor zielony (w skali od 0x00 do 0xff)
+Wykorzystać operator end
+
+0x56 - sam kolor zielony (w skali od 0x00 do 0xff)
+Wykorzystać operator &
+0x123456
+0x00ff00
+&
+6 & 0
+=
+110
+000
+& = zawsze 0
+ff = 11111111
+1 przy & daje zawsze tą drugą cyfrę
+3 & f = 3
+4 & f = 4
+cokolwiek & f= cokolwiek
+
+
+
+
+
+
+
+
+	//cout << 0xff; //255
+//	int a = 0xff; //255
+	//int b = 0xaabbccdd; //kazde 2 cyfry szesnastkowe to jest 1 bajt
+	
+//	cout << sizeof(int);
+	
+
+
+
+
+
+
+
+
+
+
+każda liczba w systemie szesnastkowym to 0
+
